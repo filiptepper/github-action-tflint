@@ -1,0 +1,8 @@
+name: 'TFLint'
+description: 'Runs tflint, Terraform Linter'
+
+runs:
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/exec/wrapper-tflint.sh $GITHUB_ACTION_PATH/exec/tflint.hcl
+      shell: bash
