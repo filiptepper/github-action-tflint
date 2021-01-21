@@ -9,5 +9,5 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - run: $GITHUB_ACTION_PATH/exec/wrapper-tflint.sh "${{ inputs.files }}" "$GITHUB_ACTION_PATH/exec/tflint.hcl"
+    - run: $GITHUB_ACTION_PATH/exec/wrapper-tflint.sh '${{ inputs.files }}' "$GITHUB_ACTION_PATH/exec/tflint.hcl"
       shell: bash
